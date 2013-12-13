@@ -3,7 +3,6 @@ class Product < ActiveRecord::Base
   
   validates :name, :price, :type, presence: true 
   
-  
 end
 
  
