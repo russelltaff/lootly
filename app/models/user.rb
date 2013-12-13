@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   # dont wan't to be able to sql user.password
 
   validates :email, uniqueness: true, presence: true
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, length: { minimum: 6 }
   validates :password_digest, presence: true
   validates :session_token, presence:true
 

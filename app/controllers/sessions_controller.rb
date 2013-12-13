@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
   
   before_filter :logged_in?, only:[:destroy]
+  before_filter :check_logged_in, only:[:new]
   
   def new
-    
+
   end
   
   def create
@@ -21,5 +22,12 @@ class SessionsController < ApplicationController
   def destroy
     logout
   end
+
+  def check_logged_in
+    if self.current_user
+    redirect_to root_url
+    end
+  end
+
   
 end
