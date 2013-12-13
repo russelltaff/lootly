@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     
     if @user.save
+      LootMailer.welcome_email(@user).deliver!
       login(@user)
     else
       flash[:errors] = @user.errors.full_messages
