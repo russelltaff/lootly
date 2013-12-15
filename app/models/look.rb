@@ -16,5 +16,4 @@ class Look < ActiveRecord::Base
     source: :product
   )
   
-  
 end
