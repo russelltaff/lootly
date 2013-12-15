@@ -45,9 +45,76 @@ body {
 .dynamic_view_container{
 	position: fixed;
 	background: lightblue;
-	width: 100%;
+	width: 2000px;
 	left: 200px;
 	height: 100%;
+}
+
+.show_loot_index{
+	background: purple;
+	height: 100%;
+}
+
+.space-top{
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
+.space-bottom{
+/*	float: left;*/
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
+.space-top a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#space-1{
+	position: absolute;
+	background: red;
+	width: 200px;
+	height: 100%;
+/*	float: left;*/
+}
+
+#space-2{
+	position: absolute;
+	left: 200px;
+	background: blue;
+	width: 200px;
+	height: 100%;
+/*	float: left;*/
+}
+
+#space-3{
+	position: absolute;
+	left: 400px;
+	background: grey;
+	width: 200px;
+	height: 100%;
+/*	float: left;*/
+}
+
+#space-4{
+	position: absolute;
+	background: white;
+	width: 300px;
+	height: 100%;
+/*	float: left;*/
+}
+
+#space-5{
+	position: absolute;
+	background: goldenrod;
+	left: 300px;
+	width: 300px;
+	height: 100%;
+/*	float: left;*/
 }
 
 .unhide_product_index{
@@ -57,3 +124,11 @@ body {
 .move_right{
 	left: 300px;
 }
+
+
+
+
+
+
+
+
