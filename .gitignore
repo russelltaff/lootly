@@ -4,5 +4,8 @@ log/development.log
 config/database.yml
 
 /log/*.log
-/tmp 
+
+/tmp
+# Ignore application configuration
+/config/application.yml
 
