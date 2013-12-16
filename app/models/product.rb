@@ -1,7 +1,7 @@
 class Product < ActiveRecord::Base
-  attr_accessible :male, :type, :name, :price, :size, :quantity, :color, :material 
+  attr_accessible :male, :product_type, :name, :price, :size, :quantity, :color, :material 
   
-  validates :name, :price, :type, presence: true 
+  validates :name, :price, :product_type, presence: true 
   
   has_many(
     :look_items,
