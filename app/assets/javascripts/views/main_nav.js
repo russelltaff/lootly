@@ -6,7 +6,8 @@ Lootly.Views.MainNav = Backbone.View.extend({
 	events: {
 		"click .see_loot_link"  : "show_loot_index",
 		"click .shop_loot_link" : "show_product_index",
-		"click .about_link"     : "show_about_index"
+		"click .about_link"     : "show_about_index",
+		"click .contact_link"   : "show_contact_index"
 	},
 	
 	template: JST["main_nav"](),
@@ -26,6 +27,16 @@ Lootly.Views.MainNav = Backbone.View.extend({
 	
 	show_about_index : function(event){
 		event.preventDefault();
+		$(".dynamic_view_container").empty()
+		var showAboutIndex = new Lootly.Views.ShowAboutIndex();
+		$(".dynamic_view_container").html(showAboutIndex.render().$el)
+	},
+	
+	show_contact_index : function(event){
+		event.preventDefault();
+		$(".dynamic_view_container").empty()
+		var showContactIndex = new Lootly.Views.ShowContactIndex();
+		$(".dynamic_view_container").html(showContactIndex.render().$el)
 	},
 	
 	render: function(){

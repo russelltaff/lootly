@@ -1,4 +1,4 @@
-section, body, h1, ul, li{
+section, body, h1, h3, form, input, textarea, ul, li{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
@@ -45,7 +45,7 @@ body {
 .dynamic_view_container{
 	position: fixed;
 	background: lightblue;
-	width: 2000px;
+	width: 100%;
 	left: 200px;
 	height: 100%;
 }
@@ -122,6 +122,47 @@ body {
 
 .move_right{
 	left: 300px;
+}
+
+.show_contact_index{
+	height: auto;
+	width: 800px;
+	margin: auto;
+/*	position: relative;*/
+	margin-top: 2%;
+}
+.show_contact_index h1, h3{
+	display: block;
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.show_contact_index > h1{
+	font-size: 180%;
+}
+
+.show_contact_index > h3{
+	font-size: 150%;
+}
+
+.show_contact_index form{
+	width: 100%;
+}
+
+.show_contact_index input{
+	display: block;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.show_contact_index textarea{
+	display: block;
+	padding: 10px;
+	width: 80%;
+	height: 400px;
+	margin: auto;
+	margin-bottom: 20px;
 }
 
 
