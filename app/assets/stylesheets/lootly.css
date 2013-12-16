@@ -31,14 +31,13 @@ body {
 	position: fixed;
 	z-index: 99;
 	display: none;
-	background: lightgreen;
+	background-color: lightgreen;
 	width: 100px;
 	height: 100%;
 	left: 200px;
-	transition: left 2.0s ease-out;
-	transition-property: left;
-	transition-duration: 2.0s;
-	transition-timing-function: ease-out;
+
+	-webkit-transition: left 0.7s ease-out;
+	transition: left .07s ease-out;
 	transition-delay: initial;
 }
 

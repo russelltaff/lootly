@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 20131216003359) do
 
   create_table "products", force: true do |t|
     t.boolean  "male"
-    t.string   "type",       null: false
+    t.string   "product_type",       null: false
     t.string   "name",       null: false
     t.decimal  "price",      null: false
     t.string   "size",       null: false

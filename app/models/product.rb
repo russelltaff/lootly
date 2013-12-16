@@ -17,10 +17,10 @@ class Product < ActiveRecord::Base
   )
 
   has_many(
-  :photos,
-  class_name: "Photo",
-  foreign_key: :product_id,
-  primary_key: :id
+    :photos,
+    class_name: "Photo",
+    foreign_key: :product_id,
+    primary_key: :id
   )
   
 end
