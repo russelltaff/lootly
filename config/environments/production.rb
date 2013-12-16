@@ -77,4 +77,14 @@ Lootly::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # config/environments/production.rb
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['lootly'],
+      :access_key_id => ENV['AKIAI3IZC3EJ4F2LTKKQ'],
+      :secret_access_key => ENV['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']
+    }
+  }
 end
