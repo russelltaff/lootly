@@ -15,6 +15,13 @@ class Product < ActiveRecord::Base
     through: :look_items,
     source: :look
   )
+
+  has_many(
+  :photos,
+  class_name: "Photo",
+  foreign_key: :product_id,
+  primary_key: :id
+  )
   
 end
 

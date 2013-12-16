@@ -56,6 +56,10 @@ group :test do
   gem 'launchy'
 end
 
+gem "paperclip", "~> 3.0"
+
+gem "aws-sdk"
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
