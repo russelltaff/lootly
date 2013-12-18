@@ -5,6 +5,8 @@ Lootly.Routers.HomePage = Backbone.Router.extend({
 	
 	routes: {
 		"": "homepage"
+
+	
 	}, 
 	
 	homepage: function(){

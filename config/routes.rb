@@ -6,5 +6,5 @@ Lootly::Application.routes.draw do
   
   resource :sessions, only:[:new, :create, :destroy]
   
-  resource :products, only:[:index, :show]
+  resources :products, only:[:index, :show]
 end
