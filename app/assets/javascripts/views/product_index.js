@@ -10,8 +10,10 @@ Lootly.Views.ProductIndexView = Backbone.View.extend({
 	template: JST["product_index"](),
 	
 	render: function(){
+
 		this.$el.html(this.template); 
 		return this;
 	}
+
 	
 });
