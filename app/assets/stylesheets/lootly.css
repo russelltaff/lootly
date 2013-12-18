@@ -54,13 +54,10 @@ body {
 	height: 100%;
 }
 
-.space-top{
-	height: 50%;
-	width: 100%;
-	position: relative;
-}
 
-.space-bottom{
+
+/********* SEE INDEX TOP ********/
+.space-top{
 	height: 50%;
 	width: 100%;
 	position: relative;
@@ -98,6 +95,34 @@ body {
 /*	float: left;*/
 }
 
+#space-6{
+	position: absolute;
+	left: 600px;
+	background: lightgreen;
+	width: 350px;
+	height: 100%;
+/*	float: left;*/
+}
+
+#space-7{
+	position: absolute;
+	left: 900px;
+	background: lightblue;
+	width: 250px;
+	height: 100%;
+/*	float: left;*/
+}
+
+
+
+/******* SEE INDEX BOTTOM ********/
+
+.space-bottom{
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
 #space-4{
 	position: absolute;
 	background: white;
@@ -115,6 +140,27 @@ body {
 /*	float: left;*/
 }
 
+
+#space-8{
+	position: absolute;
+	background: orange;
+	left: 600px;
+	width: 250px;
+	height: 100%;
+/*	float: left;*/
+}
+
+#space-9{
+	position: absolute;
+	background: purple;
+	left: 850px;
+	width: 350px;
+	height: 100%;
+/*	float: left;*/
+}
+
+
+
 .unhide_product_index{
 	display: block;
 }
@@ -127,7 +173,7 @@ body {
 	height: auto;
 	width: 800px;
 	margin: auto;
-/*	position: relative;*/
+	position: fixed;
 	margin-top: 2%;
 }
 .show_contact_index h1, h3{
