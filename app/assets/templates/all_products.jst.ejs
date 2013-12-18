@@ -1,0 +1,7 @@
+<h2>All Products</h2>
+
+<% products.models.forEach(function(product){ %>
+	<div class="all_products">
+		<a href="#/products/<%= product.escape('id') %>" class="all_products_link"></a> 
+	</div>
+<% }); %>

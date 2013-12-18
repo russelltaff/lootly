@@ -23,6 +23,9 @@ Lootly.Views.MainNav = Backbone.View.extend({
 		event.preventDefault();
 		$(".product_index").toggleClass("unhide_product_index")
 		$(".dynamic_view_container").toggleClass("move_right")
+		var allProducts = new Lootly.Views.AllProductsView()
+		$('.dynamic_view_container').empty()
+		$('.dynamic_view_container').html(allProducts.render().$el)
 	},
 	
 	show_about_index : function(event){

@@ -210,9 +210,31 @@ body {
 	margin-bottom: 20px;
 }
 
+.products{
+	background: yellow;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
 
+.products h2{
+	margin: 0px;
+	padding: 0px;
+}
 
+.all_products{
+	background: white;
+	border: 2px solid red;
+	width: 200px;
+	height: 200px;
+	float:left;
+}
 
+.all_products_link{
+	display: block;
+	width: 200px;
+	height: 200px;
+}
 
 
 

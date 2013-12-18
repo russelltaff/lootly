@@ -1,3 +1,3 @@
-var Product = Backbone.Model.extend({
+Lootly.Models.Product = Backbone.Model.extend({
   
 });

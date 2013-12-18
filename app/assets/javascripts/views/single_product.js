@@ -1,10 +1,15 @@
-var SingleProductView = Backbone.View.extend({
+Lootly.Views.SingleProductView = Backbone.View.extend({
   initialize: function() {
-     this.listenTo(this.model, "show", this.render);
-    this.model.showSingleProduct();
-
-    this.render();
-  }
+		this.$el.addClass("show-product")
+  },
+	
+	template: JST['single_product'],
+	
+	render: function(){
+		this.$el.append(this.template({product: this.model}))
+		return this
+	}
+	
 
   // tagName: "div",
 

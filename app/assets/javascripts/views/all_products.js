@@ -1,4 +1,4 @@
-var AllProductsView = Backbone.View.extend({
+Lootly.Views.AllProductsView = Backbone.View.extend({
   tagName: "div",
 
   className: "products",
@@ -15,6 +15,14 @@ var AllProductsView = Backbone.View.extend({
     var view = new SingleProductView({model: movieResult});
     this.$el.append(view.el);
   },
+	
+	template: JST['all_products'],
+	
+	render: function(){
+		console.log("rendered!")
+		this.$el.append(this.template({products: Lootly.Products}))
+		return this
+	}
 
 
 });

@@ -1,11 +1,15 @@
-<a href="#/" class="home_page">
+<section class="home_page">
 	
 
 	
 </section>
 
+<script text="application/json" id="bootstrapped_products">
+	<%= Product.all.to_json.html_safe %>
+</script>
+
 <script>
 	$(document).ready(function(){
-	  Lootly.initialize();
+	  Lootly.initialize($('#bootstrapped_products').html());
 	});
 </script>

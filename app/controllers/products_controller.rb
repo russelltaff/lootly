@@ -1,17 +1,18 @@
 class ProductsController < ApplicationController
+  respond_to :json
+  
+  def index
+    @products = Product.all
+    respond_with json: @products
+  end
 
-def index
-  @products = Product.all
-  render json: @products
-end
+  def new
 
-def new
+  end
 
-end
+  def show
 
-def show
-
-end
+  end
 
 
 end

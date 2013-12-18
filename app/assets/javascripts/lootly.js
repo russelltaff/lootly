@@ -3,7 +3,10 @@ window.Lootly = {
   Collections: {},
   Views: {},
   Routers: {},
-  initialize: function() {
+  initialize: function(products) {
+		
+		var products = Lootly.Products = new Lootly.Collections.ProductsCollection(JSON.parse(products))
+		
 	  var router = new Lootly.Routers.HomePage();
 	  Backbone.history.start();
   }
