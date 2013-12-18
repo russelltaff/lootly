@@ -236,6 +236,18 @@ body {
 	height: 200px;
 }
 
+.all_looks{
+	background: grey;
+	border: 2px solid red;
+	width: 200px;
+	height: 200px;
+	float:left;
+}
 
+.all_looks_link{
+	display: block;
+	width: 200px;
+	height: 200px;
+}
 
 

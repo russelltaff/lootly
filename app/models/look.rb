@@ -23,4 +23,10 @@ class Look < ActiveRecord::Base
   primary_key: :id
   )
   
+  def as_json(options)
+    products = self.products
+    
+    super(options).merge!({products: products})
+  end
+  
 end

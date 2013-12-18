@@ -1,39 +1,5 @@
-<div class="space-top">
-	
-	<div id="space-1">
-		<a href="" class=""><img src="lootly/app/assets/images/LootShirt1.png"></img></a>
+<% looks.models.forEach(function(look){ %>
+	<div class="all_looks">
+		<a href="#/looks/<%= look.escape('id') %>" class="all_looks_link"></a> 
 	</div>
-
-	<div id="space-2">
-
-	</div>
-
-	<div id="space-3">
-
-	</div>
-
-	<div id="space-6">
-
-	</div>
-
-	<div id="space-7">
-
-	</div>
-</div>
-
-<div class="space-bottom">
-	<div id="space-4">
-
-	</div>
-
-	<div id="space-5">
-
-	</div>
-
-	<div id="space-8">
-
-	</div>
-	<div id="space-9">
-
-	</div>
-</div>
+<% }); %>

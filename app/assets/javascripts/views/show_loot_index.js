@@ -3,10 +3,10 @@ Lootly.Views.ShowLootIndex = Backbone.View.extend({
 		this.$el.addClass("show_loot_index")
 	},
 	
-	template: JST["show_loot_index"](),
+	template: JST["show_loot_index"],
 	
 	render: function(){
-		this.$el.append(this.template);
+		this.$el.append(this.template({looks: Lootly.Looks}));
 		return this;
 	}
 	

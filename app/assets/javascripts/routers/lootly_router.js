@@ -13,8 +13,8 @@ Lootly.Routers.HomePage = Backbone.Router.extend({
 	
 	routes: {
 		"": "homepage",
-		"products/:id" : "show_product"
-	
+		"products/:id" : "show_product",
+		"looks/:id" : "show_look"
 	}, 
 	
 	homepage: function(){
@@ -27,6 +27,13 @@ Lootly.Routers.HomePage = Backbone.Router.extend({
 
 		var showProduct = new Lootly.Views.SingleProductView({model: product})
 		this._swapView(showProduct)
+	},
+	
+	show_look: function(id){
+		console.log("in show look")
+		var look = Lootly.Looks.get(id)
+		var showLook = new Lootly.Views.SingleLookView({model: look})
+		this._swapView(showLook)
 	},
 	
 	_swapView: function(newView) {

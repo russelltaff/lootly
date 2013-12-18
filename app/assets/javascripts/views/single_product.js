@@ -9,12 +9,5 @@ Lootly.Views.SingleProductView = Backbone.View.extend({
 		this.$el.append(this.template({product: this.model}))
 		return this
 	}
-	
 
-  // tagName: "div",
-
-  // events: {
-  //   "click product_1": "product_1"
-  // }
-  // }
 })

@@ -8,8 +8,12 @@
 	<%= Product.all.to_json.html_safe %>
 </script>
 
+<script text="application/json" id="bootstrapped_looks">
+	<%= Look.all.to_json.html_safe %>
+</script>
+
 <script>
 	$(document).ready(function(){
-	  Lootly.initialize($('#bootstrapped_products').html());
+	  Lootly.initialize( $('#bootstrapped_products').html(), $('#bootstrapped_looks').html() );
 	});
 </script>
