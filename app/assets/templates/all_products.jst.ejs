@@ -2,6 +2,6 @@
 
 <% products.models.forEach(function(product){ %>
 	<div class="all_products">
-		<a href="#/products/<%= product.escape('id') %>" class="all_products_link"></a> 
+		<a href="#/products/<%= product.escape('id') %>" class="all_products_link"><img src="<%= product.get('image_filename') %>"/></a> 
 	</div>
 <% }); %>

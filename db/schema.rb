@@ -1,4 +1,4 @@
-ƒ# encoding: UTF-8
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216194924) do
+ActiveRecord::Schema.define(version: 20131219015828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,16 +36,12 @@ ActiveRecord::Schema.define(version: 20131216194924) do
   create_table "photos", force: true do |t|
     t.integer  "look_id"
     t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.string   "{:null=>false}_file_name"
-    t.string   "{:null=>false}_content_type"
-    t.integer  "{:null=>false}_file_size"
-    t.datetime "{:null=>false}_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   add_index "photos", ["look_id"], name: "index_photos_on_look_id", using: :btree
@@ -53,15 +49,16 @@ ActiveRecord::Schema.define(version: 20131216194924) do
 
   create_table "products", force: true do |t|
     t.boolean  "male"
-    t.string   "product_type", null: false
-    t.string   "name",         null: false
-    t.decimal  "price",        null: false
-    t.string   "size",         null: false
-    t.integer  "quantity",     null: false
-    t.string   "color",        null: false
-    t.string   "material",     null: false
+    t.string   "product_type",   null: false
+    t.string   "name",           null: false
+    t.decimal  "price",          null: false
+    t.string   "size",           null: false
+    t.integer  "quantity",       null: false
+    t.string   "color",          null: false
+    t.string   "material",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_filename"
   end
 
   add_index "products", ["color"], name: "index_products_on_color", using: :btree

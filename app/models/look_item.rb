@@ -1,8 +1,7 @@
 class LookItem < ActiveRecord::Base
   attr_accessible :product_id, :look_id
-  
   validates :product_id, :look_id, presence: true
-  
+    
   belongs_to(
     :look,
     class_name: "Look",
@@ -16,5 +15,7 @@ class LookItem < ActiveRecord::Base
     foreign_key: :product_id,
     primary_key: :id
   )
+
+ 
   
 end

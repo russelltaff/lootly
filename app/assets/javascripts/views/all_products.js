@@ -12,8 +12,9 @@ Lootly.Views.AllProductsView = Backbone.View.extend({
   },
 
   addOne: function(singleProduct){
-    var view = new SingleProductView({model: movieResult});
+    var view = new SingleProductView({model: new Lootly.Models.Photo});
     this.$el.append(view.el);
+
   },
 	
 	template: JST['all_products'],

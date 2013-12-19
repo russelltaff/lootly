@@ -4,10 +4,11 @@ class CreatePhotos < ActiveRecord::Migration
 
       t.integer :look_id
       t.integer :product_id
-      t.attachment :image, null: false
 
       t.timestamps
     end
+
+    add_attachment :photos, :image
 
     add_index :photos, :look_id
     add_index :photos, :product_id

@@ -22,10 +22,38 @@ body {
 	position: fixed;
 	z-index: 100;
 	left: 0;
-	background: yellow;
+	background: #efefef;
 	height: 100%;
 	width: 200px;
+
 }
+
+.main_nav ul{
+	padding: 0;
+	width: 100%;
+
+}
+
+.main_nav li{
+	margin: 5px 0;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	/*-moz-box-shadow: inset -5px -5px 5px #efefef;
+	-webkit-box-shadow: inset -5px -5px 5px #efefef;
+	box-shadow: inset -5px -5px 5px #efefef;*/
+}
+
+
+.main_nav a:link, .main_nav a:visited {
+	text-decoration: none;
+	color: purple;
+} 
+
+.main_nav a:hover, .main_nav a:active {
+	color: darkgoldenrod;
+} 
 
 .product_index{
 	position: fixed;
@@ -37,7 +65,7 @@ body {
 	left: 200px;
 
 	-webkit-transition: left 0.7s ease-out;
-	transition: left .07s ease-out;
+	transition: left .7s ease-out;
 	transition-delay: initial;
 }
 
@@ -47,6 +75,9 @@ body {
 	width: 100%;
 	left: 200px;
 	height: 100%;
+	overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap
 }
 
 .show_loot_index{
@@ -211,10 +242,12 @@ body {
 }
 
 .products{
-	background: yellow;
+	background:#efefef;
 	height: 100%;
 	width: 100%;
+	margin: 0 auto;
 	display: block;
+
 }
 
 .products h2{
@@ -225,8 +258,8 @@ body {
 .all_products{
 	background: white;
 	border: 2px solid red;
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	float:left;
 }
 

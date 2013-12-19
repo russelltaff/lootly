@@ -4,9 +4,8 @@ class Photo < ActiveRecord::Base
   validate :either_product_or_look
 
   def either_product_or_look
-    if self.look_id > 0 && self.product_id > 0
-    errors.add(:product_id, "can't be associated with both")
-      return false
+    if self.look && self.product
+      errors.add(:product_id, "can't be associated with both")
     end
   end
 
@@ -33,3 +32,5 @@ class Photo < ActiveRecord::Base
 
 
 end
+
+# product.photo.image.url

@@ -7,4 +7,6 @@ Lootly::Application.routes.draw do
   resource :sessions, only:[:new, :create, :destroy]
   
   resources :products, only:[:index, :show]
+
+  resources :photos, only:[:create, :update, :destroy]
 end

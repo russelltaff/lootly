@@ -6,3 +6,14 @@
 	<li>Color: <%= product.escape("color") %></li>
 	<li>Material: <%= product.escape("material") %></li>
 </ul>
+
+<form action="" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_nSaRKrJccrPV6cZWA0gYp6cO"
+    data-amount="10000"
+    data-name="Loot"
+    data-description="Hat 1 ($100.00)"
+    data-image="/LootShirt1.png">
+  </script>
+</form>

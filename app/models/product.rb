@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :male, :product_type, :name, :price, :size, :quantity, :color, :material 
+  attr_accessible :male, :product_type, :name, :price, :size, :quantity, :color, :material, :image_filename
   
   validates :name, :price, :product_type, presence: true 
   
